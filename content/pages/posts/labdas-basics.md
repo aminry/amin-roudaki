@@ -79,7 +79,7 @@ We can use Lambdas because the following conditions are true:
 
 It is important to understand what is a Functional Interfaces.
 
-Important: Any interface with one abstract method can be used with lambdas, but there
+>Any interface with one abstract method can be used with lambdas, but there
     is an annotation, `@FunctionalInterface`, to go on interfaces explicitly
     intended for this purpose. We recommend so annotating any interfaces in
     your project you explicitly intend to implement with lambdas.
