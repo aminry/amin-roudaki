@@ -102,13 +102,7 @@ Finally since we only have a single parameter we can remove the parentheses like
 Predicate<String> p = str -> str.isEmpty();
 ```
 
-In general you want to remove code which increases cluter without adding to the readability. When possible we should use Lambdas to make the code more concise
-
-When you *can* omit some code, does that mean you should? Remember, conciseness
-is the reason lambda expressions were added to Java. So in general, you should
-omit clutter when you can. But follow the same guideline as we use for
-non-required grouping parentheses: if you *or* your reviewer feels that the
-extra code improves readability, go ahead and include it.
+In general you want to remove code which increases cluter without adding to the readability. When possible we should use Lambdas to make the code more concise.
 
 ## More examples {#more}
 
