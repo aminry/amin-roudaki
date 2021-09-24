@@ -107,7 +107,7 @@ Here is lambda with no parameters:
 ```java
 Runnable runnable = () -> System.out.println("Hello");
 ```
-As mentioned earlier we don't need the parentheses when there is a single parameter and the type can be infered. Sometimes we cannot infer the 
+As mentioned earlier we don't need the parentheses when there is a single parameter and the type can be infered. Sometimes we cannot infer the type and we can case
 Recall that parentheses are optional only when there is exactly one parameter,
 of inferred type. And we can omit the braces, because the body is a single
 method call.
