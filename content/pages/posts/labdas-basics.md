@@ -1,0 +1,176 @@
+---
+title: Java 8 Lambdas
+excerpt: >-
+  Starting from Java 8 lambda expression added and created a much more concise
+  alternative for most previous anonymous classes. It is known to be the biggest
+  feature introduced with Java 8. It brings Functional Programming to Java.
+date: '2021-09-23'
+thumb_img_path: images/lambdas.png
+thumb_img_alt: Java 8 lambdas
+content_img_path: images/lambdas.png
+content_img_alt: Java 8 lambdas
+seo:
+  title: Basic Rules For Walking In The Mountains
+  description: >-
+    Hiking refers to difficult walking through dense forest, undergrowth, or
+    bushes.
+  extra:
+    - name: 'og:type'
+      value: article
+      keyName: property
+    - name: 'og:title'
+      value: Java 8 lambdas
+      keyName: property
+    - name: 'og:description'
+      value: Java 8 lambdas
+      keyName: property
+    - name: 'og:image'
+      value: images/6.jpg
+      keyName: property
+      relativeUrl: true
+    - name: 'twitter:card'
+      value: summary_large_image
+    - name: 'twitter:title'
+      value: Java 8 lambdas
+    - name: 'twitter:description'
+      value: Java 8 lambdas
+    - name: 'twitter:image'
+      value: images/6.jpg
+      relativeUrl: true
+layout: post
+---
+Starting from Java 8 lambda expression added and created a much more concise alternative for most previous anonymous classes. It is known to be the biggest feature introduced with Java 8. It brings Functional Programming to Java.
+
+# Lambdas Syntax
+
+Here is a basic example of common code before Java 8:
+
+```java
+Predicate<String> isEmptyString =
+    new Predicate<String>() {
+      @Override
+      public boolean apply(String str) {
+        return str.isEmpty();
+      }
+    };
+```
+
+Java 8 comes to save us here and makes it a lot more elegant. We just need to use the -> to define the method like the following:
+
+```java
+Predicate<String> isEmptyString =
+    (String str) -> {
+      return str.isEmpty();
+    };
+```
+
+## When can we use Lambdas?
+
+We can use Lambdas because the following conditions are true:
+
+*   `Predicate` is a "functional interface", meaning that it is an
+    `interface` containing *exactly one* abstract method.
+*   The lambda expression appears can easily infer the type based on
+    `Predicate<String>`.
+
+It is important to understand what is a Functional Interfaces.
+
+<div class="note">Any interface with one abstract method can be used with lambdas, but there is an annotation, `@FunctionalInterface`, to go on interfaces explicitly intended for this purpose. We recommend so annotating any interfaces in your project you explicitly intend to implement with lambdas.
+</div>
+
+# Can we make it more concise?
+
+Lambdas can help us simplify a lot more. When the lambda expression contains exactly one statement, and the statement is returning a value or it is a void method call. Then we can remove the braces like the following:
+
+```java
+Predicate<String> p = (String str) -> str.isEmpty();
+```
+
+The Java compiler can infer the argument types so we can also remove that:
+
+```java
+Predicate<String> p = (str) -> str.isEmpty();
+```
+
+Finally since we only have a single parameter we can remove the parentheses like the following:
+
+```java
+Predicate<String> p = str -> str.isEmpty();
+```
+
+When we have a lambda that is just performing a direct method call, we can use a more compact syntax using a method reference. For example:
+
+```java
+Predicate<String> p = str -> str.isEmpty();
+```
+
+can be rewritten as the even simpler
+
+```java
+Predicate<String> p = String::isEmpty;
+```
+
+or we could rewrite
+
+```java
+BinaryOperator<BigInteger> add = (BigInteger a, BigInteger b) -> a.add(b);
+```
+
+more simply as
+
+```java
+BinaryOperator<BigInteger> add = BigInteger::add;
+```
+
+<div class="note">In general you want to remove code which increases cluter without adding to the readability. When possible we should use Lambdas to make the code more concise.</div>
+
+## Show me more
+
+Here is lambda with no parameters:
+
+```java
+Runnable runnable = () -> System.out.println("Hello");
+```
+As mentioned earlier we don't need the parentheses when there is a single parameter and the type can be infered. Sometimes we cannot infer the type and we can cast:
+
+```java
+doSomething((Predicate<String>) str -> str.isEmpty());
+```
+
+## What are the limitations?
+If a method has multiple overloads and accepts different lambda types. Then it would be difficult to automatically infer the type. We need to cast in these cases to make it work.
+
+## Differences vs. anonymous classes
+
+As mentioned above, you can *mostly* think of a lambda expression or method
+reference as a concise anonymous class. But there are a few differences:
+
+*   Lambda expressions are treated as identityless. References to `this` (both
+    explicitly and implicitly) inside a lambda expression refer to the
+    *containing* instance, not the lambda instance.
+
+*   Instances of both anonymous classes and lambda expressions "capture" state
+    from the surrounding context when they are created -- copying and retaining
+    references to variables\[^2] so they can be used later. But lambda
+    expressions are much smarter about capturing only the state they will really
+    need, which often may be no state at all. This should plug more than a few
+    memory leaks!
+
+*   If a lambda *can* be extracted to a static constant and reused, the VM will
+    usually make that optimization automatically. You should still make a
+    constant for a lambda expression when you feel that it helps *readability*,
+    but there is no need to do so purely for performance reasons.
+
+*   In theory, lambda expressions can incur greater startup cost (a class is
+    generated on the fly). This has not seemed to be a significant problem for
+    any projects we're aware of.
+
+*   Lambda expressions yield fairly useless debugging output (`toString` and
+    stack traces) such as `Foo$$Lambda$5/1044036744`. Unlike with classes, there
+    are really no options for improving this. Of course, what's most important
+    in a stack trace are the exception messages, filenames, and line numbers,
+    and those are all intact.
+
+*   You'll still need to use classes in plenty of situations: when you have more
+    than one method to implement, when you are implementing an abstract class,
+    when you need state, etc.
