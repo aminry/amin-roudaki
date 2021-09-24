@@ -84,12 +84,7 @@ It is important to understand what is a Functional Interfaces.
 
 # What else can we do?
 
-Lambdas can help us simplify a lot more. If the 
-
-This is already a lot of magic, but there are still more simplifications to
-come...
-
-If the lambda expression contains exactly one statement, and that statement is
+Lambdas can help us simplify a lot more. If the lambda expression contains exactly one statement, and that statement is
 either a `return` statement or a void method call, then you can remove both the
 braces and the `return` keyword (if present). Our example now becomes:
 
