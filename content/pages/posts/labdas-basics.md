@@ -49,6 +49,7 @@ Photo by [David Marcu.](https://unsplash.com/photos/wcHCzgo0_mQ)
 
 Starting from Java 8 lambda expression added and created a much more concise alternative for most previous anonymous classes. It is known to be the biggest feature introduced with Java 8. It brings Functional Programming to Java.
 
+
 Here is a basic example of common code before Java 8:
 ```java
 Predicate<String> isEmptyString =
