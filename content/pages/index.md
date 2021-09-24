@@ -4,14 +4,14 @@ hide_title: true
 sections:
   - section_id: hero
     type: section_hero
-    title: "Hi, Welcome."
-    content: >-
-      Big Data, Micro-services, Ads Infrastructure, Best Practices
+    title: 'Hi, Welcome.'
+    content: 'Big Data, Micro-services, Ads Infrastructure, Best Practices'
   - section_id: about
     type: section_content
     title: About
-    content: >-
-      My takes on various topics from various best practices to building services and Ads infrastrcture.
+    content: >
+      My takes on various topics from best practices to building services and
+      Ads infrastructure.
     actions:
       - label: Contact Me
         url: /contact
