@@ -76,3 +76,5 @@ We can use Lambdas because the following conditions are true:
     `interface` containing *exactly one* abstract method.
 *   The lambda expression appears can easily infer the type based on 
     `Predicate<String>`.
+
+## Functional Interfaces
