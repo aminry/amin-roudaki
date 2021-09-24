@@ -7,7 +7,7 @@ excerpt: >-
   aside.
 date: '2021-09-23'
 thumb_img_path: images/6.jpg
-thumb_img_alt: Hikers on the trail
+thumb_img_alt: Java 8 lambdas
 content_img_path: images/6.jpg
 content_img_alt: Hikers on the trail
 seo:
