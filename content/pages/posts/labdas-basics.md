@@ -69,3 +69,4 @@ Predicate<String> isEmptyString =
     };
 ```
 
+When can 
