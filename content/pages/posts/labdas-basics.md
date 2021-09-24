@@ -97,6 +97,31 @@ Finally since we only have a single parameter we can remove the parentheses like
 ```java
 Predicate<String> p = str -> str.isEmpty();
 ```
+For a lambda that boils down to a direct method call, there is an even more
+compact syntax available: a method reference. For example, the lambda
+
+```java
+Predicate<String> p = str -> str.isEmpty();
+```
+
+can be rewritten as the even simpler
+
+```java
+Predicate<String> p = String::isEmpty;
+```
+
+or we could rewrite
+
+```java
+BinaryOperator<BigInteger> sum = (BigInteger a, BigInteger b) -> a.add(b);
+```
+
+more simply as
+
+```java
+BinaryOperator<BigInteger> sum = BigInteger::add;
+```
+
 
 In general you want to remove code which increases cluter without adding to the readability. When possible we should use Lambdas to make the code more concise.
 
