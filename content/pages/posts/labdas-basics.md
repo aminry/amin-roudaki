@@ -20,7 +20,7 @@ seo:
       value: article
       keyName: property
     - name: 'og:title'
-      value: Basic Rules For Walking In The Mountains
+      value: Java 8 lambdas
       keyName: property
     - name: 'og:description'
       value: >-
