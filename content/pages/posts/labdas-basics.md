@@ -122,7 +122,6 @@ more simply as
 BinaryOperator<BigInteger> add = BigInteger::add;
 ```
 
-
 In general you want to remove code which increases cluter without adding to the readability. When possible we should use Lambdas to make the code more concise.
 
 ## Show me more
