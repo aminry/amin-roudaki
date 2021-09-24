@@ -82,7 +82,7 @@ It is important to understand what is a Functional Interfaces.
 <div class="note">Any interface with one abstract method can be used with lambdas, but there is an annotation, `@FunctionalInterface`, to go on interfaces explicitly intended for this purpose. We recommend so annotating any interfaces in your project you explicitly intend to implement with lambdas.
 </div>
 
-What else can we do?
+# What else can we do?
 
 Note that the new code is not *absolutely* equivalent to the old; there are some
 differences between lambda expressions and anonymous classes discussed
