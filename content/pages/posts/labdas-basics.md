@@ -84,7 +84,7 @@ It is important to understand what is a Functional Interfaces.
 
 # What else can we do?
 
-We can 
+Lambdas can help us simplify a lot more. 
 
 This is already a lot of magic, but there are still more simplifications to
 come...
