@@ -108,11 +108,6 @@ Here is lambda with no parameters:
 Runnable runnable = () -> System.out.println("Hello");
 ```
 As mentioned earlier we don't need the parentheses when there is a single parameter and the type can be infered. Sometimes we cannot infer the type and we can cast:
-Recall that parentheses are optional only when there is exactly one parameter,
-of inferred type. And we can omit the braces, because the body is a single
-method call.
-
-Target typing may sometimes fail, but you can point the way using a cast:
 
 ```java
 doSomething((Predicate<String>) str -> str.isEmpty());
