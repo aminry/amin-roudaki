@@ -82,7 +82,7 @@ It is important to understand what is a Functional Interfaces.
 <div class="note">Any interface with one abstract method can be used with lambdas, but there is an annotation, `@FunctionalInterface`, to go on interfaces explicitly intended for this purpose. We recommend so annotating any interfaces in your project you explicitly intend to implement with lambdas.
 </div>
 
-# Can we make it more consice?
+# Can we make it more concise?
 
 Lambdas can help us simplify a lot more. When the lambda expression contains exactly one statement, and the statement is returning a value or it is a void method call. Then we can remove the braces like the following:
 
