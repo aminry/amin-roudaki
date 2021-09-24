@@ -122,7 +122,7 @@ more simply as
 BinaryOperator<BigInteger> add = BigInteger::add;
 ```
 
-<div class="node">In general you want to remove code which increases cluter without adding to the readability. When possible we should use Lambdas to make the code more concise.</div>
+<div class="note">In general you want to remove code which increases cluter without adding to the readability. When possible we should use Lambdas to make the code more concise.</div>
 
 ## Show me more
 
