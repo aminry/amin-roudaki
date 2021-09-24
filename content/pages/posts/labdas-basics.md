@@ -72,7 +72,7 @@ Predicate<String> isEmptyString =
 
 ## Why can we use Lambdas?
 We can use Lambdas because the following conditions are true:
-*   `Predicate` is a "functional interface"[^1], meaning that it is an
+*   `Predicate` is a "functional interface", meaning that it is an
     `interface` containing *exactly one* abstract method.
 *   And the lambda expression appears in a context where it is clear that
     `Predicate<String>` is the type expected.
