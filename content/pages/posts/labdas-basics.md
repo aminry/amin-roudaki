@@ -1,9 +1,11 @@
 ---
 title: Java 8 Lambdas
 excerpt: >-
-  Starting from Java 8 lambda expression added and created a much more concise alternative for most previous anonymous classes. It is known to be the biggest feature introduced with Java 8. It brings Functional Programming to Java.
+  Starting from Java 8 lambda expression added and created a much more concise
+  alternative for most previous anonymous classes. It is known to be the biggest
+  feature introduced with Java 8. It brings Functional Programming to Java.
 date: '2021-09-23'
-thumb_img_path: images/6.jpg
+thumb_img_path: images/lambdas.png
 thumb_img_alt: Java 8 lambdas
 content_img_path: images/6.jpg
 content_img_alt: Java 8 lambdas
@@ -20,8 +22,7 @@ seo:
       value: Java 8 lambdas
       keyName: property
     - name: 'og:description'
-      value: >-
-        Java 8 lambdas
+      value: Java 8 lambdas
       keyName: property
     - name: 'og:image'
       value: images/6.jpg
@@ -32,8 +33,7 @@ seo:
     - name: 'twitter:title'
       value: Java 8 lambdas
     - name: 'twitter:description'
-      value: >-
-        Java 8 lambdas
+      value: Java 8 lambdas
     - name: 'twitter:image'
       value: images/6.jpg
       relativeUrl: true
