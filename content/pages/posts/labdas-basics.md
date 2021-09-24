@@ -113,7 +113,6 @@ As mentioned earlier we don't need the parentheses when there is a single parame
 doSomething((Predicate<String>) str -> str.isEmpty());
 ```
 
-
 ## What are the limitations?
 If a method has multiple overloads and accepts different lambda types. Then it would be difficult to automatically infer the type. We need to cast in these cases to make it work.
 
