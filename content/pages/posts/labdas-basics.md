@@ -104,7 +104,7 @@ Predicate<String> p = str -> str.isEmpty();
 
 In general you want to remove code which increases cluter without adding to the readability. When possible we should use Lambdas to make the code more concise.
 
-## More examples {#more}
+## Show me more
 
 This lambda takes no parameters:
 
