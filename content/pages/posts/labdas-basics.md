@@ -84,7 +84,7 @@ It is important to understand what is a Functional Interfaces.
 
 # What else can we do?
 
-Lambdas can help us simplify a lot more. When the lambda expression contains exactly one statement, and that statement is either a `return` statement or a void method call, then you can remove both the braces and the `return` keyword (if present). Here is an example:
+Lambdas can help us simplify a lot more. When the lambda expression contains exactly one statement, and the statement is either a `return` statement or a void method call, then you can remove both the braces and the `return` keyword (if present). Here is an example:
 
 ```java
 Predicate<String> p = (String str) -> str.isEmpty();
