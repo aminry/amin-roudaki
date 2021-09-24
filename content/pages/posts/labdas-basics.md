@@ -60,7 +60,7 @@ Predicate<String> isEmptyString =
     };
 ```
 
-Java 8 comes to save us here and makes it a lot more elegant. We just need to use the -> to define the method.
+Java 8 comes to save us here and makes it a lot more elegant. We just need to use the -> to define the method like the following:
 
 ```java
 Predicate<String> isEmptyString =
