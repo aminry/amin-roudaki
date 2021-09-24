@@ -114,7 +114,7 @@ doSomething((Predicate<String>) str -> str.isEmpty());
 ```
 
 ## What are the limitations?
-If a method has multiple overloads and accepts different lambda types. Then it would be difficult to automatically infer  
+If a method has multiple overloads and accepts different lambda types. Then it would be difficult to automatically infer the type. We need to cast in these cases to make it work. 
 When will it fail? The most common case is when there are multiple overloads
 accepting different lambda types (a scenario you should try to avoid when
 overloading lambda-accepting methods). But in general, Java 8's new smarter type
