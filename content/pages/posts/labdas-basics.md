@@ -107,7 +107,7 @@ Here is lambda with no parameters:
 ```java
 Runnable runnable = () -> System.out.println("Hello");
 ```
-As we 
+As 
 Recall that parentheses are optional only when there is exactly one parameter,
 of inferred type. And we can omit the braces, because the body is a single
 method call.
