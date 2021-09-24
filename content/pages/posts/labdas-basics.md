@@ -84,10 +84,7 @@ It is important to understand what is a Functional Interfaces.
 
 # What else can we do?
 
-Note that the new code is not *absolutely* equivalent to the old; there are some
-differences between lambda expressions and anonymous classes discussed
-[below](#vs_class). But *for the most part*, you can get away with thinking of
-them as the same.
+
 
 This is already a lot of magic, but there are still more simplifications to
 come...
