@@ -96,7 +96,7 @@ The Java compiler can infer the argument types so we can also remove that:
 Predicate<String> p = (str) -> str.isEmpty();
 ```
 
-Finally since we only have a single parameter we can remove the , when there is exactly one parameter, with an inferred type, then even
+Finally since we only have a single parameter we can remove the parentheses, when there is exactly one parameter, with an inferred type, then even
 the parentheses around the parameter list can go:
 
 ```java
