@@ -106,7 +106,7 @@ In general you want to remove code which increases cluter without adding to the 
 
 ## Show me more
 
-This lambda takes no parameters:
+Here is  lambda takes no parameters:
 
 ```java
 Runnable runnable = () -> System.out.println("Hello");
