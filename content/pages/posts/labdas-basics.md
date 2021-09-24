@@ -77,4 +77,4 @@ We can use Lambdas because the following conditions are true:
 *   The lambda expression appears can easily infer the type based on 
     `Predicate<String>`.
 
-The important Functional Interfaces
+It is important to  Functional Interfaces
