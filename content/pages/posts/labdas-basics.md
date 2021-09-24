@@ -10,10 +10,12 @@ thumb_img_alt: Java 8 lambdas
 content_img_path: images/lambdas.png
 content_img_alt: Java 8 lambdas
 seo:
-  title: Basic Rules For Walking In The Mountains
+  title: Java 8 Lambdas
   description: >-
-    Hiking refers to difficult walking through dense forest, undergrowth, or
-    bushes.
+    Starting from Java 8 lambda expression added and created a much more concise
+    alternative for most previous anonymous classes. It is known to be the
+    biggest feature introduced with Java 8. It brings Functional Programming to
+    Java.
   extra:
     - name: 'og:type'
       value: article
@@ -22,10 +24,14 @@ seo:
       value: Java 8 lambdas
       keyName: property
     - name: 'og:description'
-      value: Java 8 lambdas
+      value: >-
+        Starting from Java 8 lambda expression added and created a much more
+        concise alternative for most previous anonymous classes. It is known to
+        be the biggest feature introduced with Java 8. It brings Functional
+        Programming to Java.
       keyName: property
     - name: 'og:image'
-      value: images/6.jpg
+      value: images/lambdas.png
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -73,7 +79,7 @@ We can use Lambdas because the following conditions are true:
 *   The lambda expression appears can easily infer the type based on
     `Predicate<String>`.
 
-It is important to understand what is a Functional Interfaces.
+It is important to understand what is Functional Interfaces.
 
 <div class="note">Any interface with one abstract method can be used with lambdas, but there is an annotation, `@FunctionalInterface`, to go on interfaces explicitly intended for this purpose. We recommend so annotating any interfaces in your project you explicitly intend to implement with lambdas.
 </div>
@@ -131,13 +137,15 @@ Here is lambda with no parameters:
 ```java
 Runnable runnable = () -> System.out.println("Hello");
 ```
-As mentioned earlier we don't need the parentheses when there is a single parameter and the type can be infered. Sometimes we cannot infer the type and we can cast:
+
+As mentioned earlier we don't need the parentheses when there is a single parameter and the type can be inferred. Sometimes we cannot infer the type and we can cast:
 
 ```java
 doSomething((Predicate<String>) str -> str.isEmpty());
 ```
 
 ## What are the limitations?
+
 If a method has multiple overloads and accepts different lambda types. Then it would be difficult to automatically infer the type. We need to cast in these cases to make it work.
 
 ## Differences vs. anonymous classes
