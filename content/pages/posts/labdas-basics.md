@@ -84,7 +84,7 @@ It is important to understand what is a Functional Interfaces.
 
 # What else can we do?
 
-
+We can 
 
 This is already a lot of magic, but there are still more simplifications to
 come...
