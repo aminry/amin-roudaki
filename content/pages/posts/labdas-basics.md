@@ -73,7 +73,7 @@ We can use Lambdas because the following conditions are true:
 *   The lambda expression appears can easily infer the type based on
     `Predicate<String>`.
 
-It is important to understand what is a Functional Interfaces.
+It is important to understand what is Functional Interfaces.
 
 <div class="note">Any interface with one abstract method can be used with lambdas, but there is an annotation, `@FunctionalInterface`, to go on interfaces explicitly intended for this purpose. We recommend so annotating any interfaces in your project you explicitly intend to implement with lambdas.
 </div>
@@ -131,13 +131,15 @@ Here is lambda with no parameters:
 ```java
 Runnable runnable = () -> System.out.println("Hello");
 ```
-As mentioned earlier we don't need the parentheses when there is a single parameter and the type can be infered. Sometimes we cannot infer the type and we can cast:
+
+As mentioned earlier we don't need the parentheses when there is a single parameter and the type can be inferred. Sometimes we cannot infer the type and we can cast:
 
 ```java
 doSomething((Predicate<String>) str -> str.isEmpty());
 ```
 
 ## What are the limitations?
+
 If a method has multiple overloads and accepts different lambda types. Then it would be difficult to automatically infer the type. We need to cast in these cases to make it work.
 
 ## Differences vs. anonymous classes
