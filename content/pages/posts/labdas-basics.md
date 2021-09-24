@@ -163,10 +163,3 @@ reference as a concise anonymous class. But there are a few differences:
 *   You'll still need to use classes in plenty of situations: when you have more
     than one method to implement, when you are implementing an abstract class,
     when you need state, etc.
-
-[^2]: In Java 7, you had to mark local variables as `final` for them to be
-    eligible for capture by an anonymous class. In Java 8, the compiler will
-    automatically infer when local variables can be `final`, so this is no
-    longer necessary for lambdas _or_ anonymous classes. In this case, the
-    variable is called
-    [effectively final](other-language.md#effectively-final-variables).
