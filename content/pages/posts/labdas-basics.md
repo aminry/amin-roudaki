@@ -102,7 +102,7 @@ Finally since we only have a single parameter we can remove the parentheses like
 Predicate<String> p = str -> str.isEmpty();
 ```
 
-
+In general you want to remove extra code 
 
 When you *can* omit some code, does that mean you should? Remember, conciseness
 is the reason lambda expressions were added to Java. So in general, you should
