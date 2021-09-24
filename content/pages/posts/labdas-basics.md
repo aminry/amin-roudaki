@@ -170,16 +170,3 @@ reference as a concise anonymous class. But there are a few differences:
     longer necessary for lambdas _or_ anonymous classes. In this case, the
     variable is called
     [effectively final](other-language.md#effectively-final-variables).
-
-## External tutorial
-
-A more detailed tutorial on the use of lambda expressions can be found
-[here](http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html).
-<!-- TODO(kevinb): find and agree on the best resource we can -->
-
---------------------------------------------------------------------------------
-
-Please continue to the next page, [Method references](method-refs.md), or choose
-another topic in the sidebar.
-
---------------------------------------------------------------------------------
