@@ -62,7 +62,7 @@ Predicate<String> isEmptyString =
 
 Java 8 comes to save us here and makes it a lot more elegant.
 ```java
-Predicate<String> p =
+Predicate<String> isEmptyString =
     (String str) -> {
       return str.isEmpty();
     };
