@@ -1,8 +1,6 @@
 ---
 title: About Me
-subtitle: This is a short page about me and my work.
-img_path: images/about.jpg
-img_alt: Portrait of a man with beard and mustache
+subtitle: 
 seo:
   title: About Me
   description: This is the about me page
@@ -16,10 +14,6 @@ seo:
     - name: 'og:description'
       value: This is the about me page
       keyName: property
-    - name: 'og:image'
-      value: images/about.jpg
-      keyName: property
-      relativeUrl: true
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
@@ -32,12 +26,16 @@ seo:
 layout: page
 ---
 
-**John Doe** is a Senior Art Director from [Stockholm](https://en.wikipedia.org/wiki/Stockholm), Sweden. After graduating from The College of Visual Arts with a degree in Communication Design, he worked for three small graphic design shops where he honed his design style and sensibility.
+**Amin Roudaki** is a Software Engineer from [Seattle](https://en.wikipedia.org/wiki/Seattle), Washington, USA. With over 20+ years of experience in building wide range of software development projects. From building start ups to working at big tech Microsoft and Google.
 
-His work has been recognized by Communication Arts, Print, How, ID, IdN, AIGA, Effie, Archive, Graphis, AdFed and Rockport. Graphic Design USA named him a person to watch in 2019.
+For the last 10 my main focus is big data solutions which are able to process peta-byte of data in near realtime. Followings are some of my recent works:
 
->The world always seems brighter when you’ve just made something that wasn’t there before. <cite>Neil Gaiman</cite>
+- Currently At Coupang.com leading the team to built the realtime Ads budgeting service, which provides unified Ads budget across all coupangs service. It can handle ultra higher traffic, while providing sub-milliseconds latency. Also leading the team to build a unified data platform which gives access real-time access to many different data sources needed for Ads Serving, Indexing and Ranking.
 
-As a hobby, John Doe authors the most influential design blog in Sweden with over 100,000 page views a month. He lives in Stockholm with his beautiful wife and two boys.
+- At Google led a team of engineers to build a new, fully automated, rule-based distributed mutation platform on the Ads back-end database. This system monitors changes to data across all Ad campaign data and performs further mutations based on the defined rules. It processes over 20K/s operations, and it mutates over 3K/s entities. 
+
+- At Microsoft Skype built the first streaming data platform for Skype telemetry system. Handling the ultra-large-scale of data within minute latency. 
+
+> Believe that creating new things is the greatest joy of mankind. 
 
 *Thank You for reading!*
