@@ -47,7 +47,7 @@ layout: post
 
 Photo by [David Marcu.](https://unsplash.com/photos/wcHCzgo0_mQ)
 
-A lambda expression is a very concise alternative for many (perhaps most) anonymous classes.
+A lambda expression is Java 8 is a very concise alternative for many (perhaps most) anonymous classes.
 
 Here's the sort of bulky, redundant code you have seen commonly before Java 8:
 
