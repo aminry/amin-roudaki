@@ -82,9 +82,7 @@ It is important to understand what is a Functional Interfaces.
 <div class="note">Any interface with one abstract method can be used with lambdas, but there is an annotation, `@FunctionalInterface`, to go on interfaces explicitly intended for this purpose. We recommend so annotating any interfaces in your project you explicitly intend to implement with lambdas.
 </div>
 
-Because these conditions are met, you will get what you want: a `Predicate`
-object, whose `apply` method returns `str.isEmpty()` as shown in the body of the
-lambda expression.
+What else can we do?
 
 Note that the new code is not *absolutely* equivalent to the old; there are some
 differences between lambda expressions and anonymous classes discussed
