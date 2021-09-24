@@ -10,7 +10,7 @@ thumb_img_alt: Java 8 lambdas
 content_img_path: images/lambdas.png
 content_img_alt: Java 8 lambdas
 seo:
-  title: Basic Rules For Walking In The Mountains
+  title: Java 8 Lambdas
   description: >-
     Hiking refers to difficult walking through dense forest, undergrowth, or
     bushes.
