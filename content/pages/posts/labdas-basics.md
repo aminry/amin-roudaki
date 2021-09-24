@@ -24,7 +24,11 @@ seo:
       value: Java 8 lambdas
       keyName: property
     - name: 'og:description'
-      value: Java 8 lambdas
+      value: >-
+        Starting from Java 8 lambda expression added and created a much more
+        concise alternative for most previous anonymous classes. It is known to
+        be the biggest feature introduced with Java 8. It brings Functional
+        Programming to Java.
       keyName: property
     - name: 'og:image'
       value: images/lambdas.png
