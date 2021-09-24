@@ -12,8 +12,10 @@ content_img_alt: Java 8 lambdas
 seo:
   title: Java 8 Lambdas
   description: >-
-    Hiking refers to difficult walking through dense forest, undergrowth, or
-    bushes.
+    Starting from Java 8 lambda expression added and created a much more concise
+    alternative for most previous anonymous classes. It is known to be the
+    biggest feature introduced with Java 8. It brings Functional Programming to
+    Java.
   extra:
     - name: 'og:type'
       value: article
