@@ -75,4 +75,4 @@ We can use Lambdas because the following conditions are true:
 *   `Predicate` is a "functional interface", meaning that it is an
     `interface` containing *exactly one* abstract method.
 *   The lambda expression appears can easily infer the type based on 
-    `Predicate<String>` is the type expected.
+    `Predicate<String>`.
