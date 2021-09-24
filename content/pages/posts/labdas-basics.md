@@ -122,7 +122,7 @@ inference is sort of a black box: it's smart but in difficult-to-predict ways.
 We really don't have any better advice than "try it without explicit types, then
 add explicit types back in until it works."
 
-## Differences vs. anonymous classes {#vs_class}
+## Differences vs. anonymous classes
 
 As mentioned above, you can *mostly* think of a lambda expression or method
 reference as a concise anonymous class. But there are a few differences:
