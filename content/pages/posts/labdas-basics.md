@@ -97,6 +97,7 @@ Finally since we only have a single parameter we can remove the parentheses like
 ```java
 Predicate<String> p = str -> str.isEmpty();
 ```
+
 For a lambda that boils down to a direct method call, there is an even more
 compact syntax available: a method reference. For example, the lambda
 
