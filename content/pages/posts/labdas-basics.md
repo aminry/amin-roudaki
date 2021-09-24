@@ -90,7 +90,7 @@ Lambdas can help us simplify a lot more. When the lambda expression contains exa
 Predicate<String> p = (String str) -> str.isEmpty();
 ```
 
-The compiler will also infer missing argument types if it can:
+The Java compiler can infer missing argument types if it can:
 
 ```java
 Predicate<String> p = (str) -> str.isEmpty();
