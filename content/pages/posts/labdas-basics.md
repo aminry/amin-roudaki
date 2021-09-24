@@ -33,7 +33,7 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Basic Rules For Walking In The Mountains
+      value: Java 8 lambdas
     - name: 'twitter:description'
       value: >-
         Hiking refers to difficult walking through dense forest, undergrowth, or
