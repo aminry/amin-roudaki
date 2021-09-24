@@ -71,4 +71,4 @@ Predicate<String> isEmptyString =
 ```
 
 # When can we use Lambdas?
-
+We can use Lambdas if an
