@@ -50,7 +50,9 @@ Photo by [David Marcu.](https://unsplash.com/photos/wcHCzgo0_mQ)
 Starting from Java 8 lambda expression added and created a much more concise alternative for most previous anonymous classes.
 
 Here is a basic example of common code before Java 8:
+```
 
+```
 
 
 
