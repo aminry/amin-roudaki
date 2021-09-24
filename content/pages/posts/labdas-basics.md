@@ -60,5 +60,6 @@ Predicate<String> p =
     };
 ```
 
+Java 8 comes to save us here and makes it a lot more elegant.
 
 
