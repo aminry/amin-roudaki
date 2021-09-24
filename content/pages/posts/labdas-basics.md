@@ -27,7 +27,7 @@ seo:
       value: Java 8 lambdas
       keyName: property
     - name: 'og:image'
-      value: images/6.jpg
+      value: images/lambdas.png
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
