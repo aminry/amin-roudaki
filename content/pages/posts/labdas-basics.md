@@ -39,13 +39,12 @@ seo:
       relativeUrl: true
 layout: post
 ---
-
-Photo by [David Marcu.](https://unsplash.com/photos/wcHCzgo0_mQ)
-
 Starting from Java 8 lambda expression added and created a much more concise alternative for most previous anonymous classes. It is known to be the biggest feature introduced with Java 8. It brings Functional Programming to Java.
 
 # Lambdas Syntax
+
 Here is a basic example of common code before Java 8:
+
 ```java
 Predicate<String> isEmptyString =
     new Predicate<String>() {
@@ -66,10 +65,12 @@ Predicate<String> isEmptyString =
 ```
 
 ## Why can we use Lambdas?
+
 We can use Lambdas because the following conditions are true:
+
 *   `Predicate` is a "functional interface", meaning that it is an
     `interface` containing *exactly one* abstract method.
-*   The lambda expression appears can easily infer the type based on 
+*   The lambda expression appears can easily infer the type based on
     `Predicate<String>`.
 
 It is important to understand what is a Functional Interfaces.
@@ -135,7 +136,7 @@ reference as a concise anonymous class. But there are a few differences:
 
 *   Instances of both anonymous classes and lambda expressions "capture" state
     from the surrounding context when they are created -- copying and retaining
-    references to variables[^2] so they can be used later. But lambda
+    references to variables\[^2] so they can be used later. But lambda
     expressions are much smarter about capturing only the state they will really
     need, which often may be no state at all. This should plug more than a few
     memory leaks!
