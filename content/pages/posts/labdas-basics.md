@@ -102,7 +102,7 @@ Finally since we only have a single parameter we can remove the parentheses like
 Predicate<String> p = str -> str.isEmpty();
 ```
 
-In general you want to remove code which increases cluter without adding an
+In general you want to remove code which increases cluter without adding to the readability. When possible we should use Lambdas to make the code more 
 
 When you *can* omit some code, does that mean you should? Remember, conciseness
 is the reason lambda expressions were added to Java. So in general, you should
