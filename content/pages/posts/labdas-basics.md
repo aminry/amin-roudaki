@@ -113,13 +113,13 @@ Predicate<String> p = String::isEmpty;
 or we could rewrite
 
 ```java
-BinaryOperator<BigInteger> sum = (BigInteger a, BigInteger b) -> a.add(b);
+BinaryOperator<BigInteger> add = (BigInteger a, BigInteger b) -> a.add(b);
 ```
 
 more simply as
 
 ```java
-BinaryOperator<BigInteger> sum = BigInteger::add;
+BinaryOperator<BigInteger> add = BigInteger::add;
 ```
 
 
