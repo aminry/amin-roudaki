@@ -70,7 +70,7 @@ Predicate<String> isEmptyString =
     };
 ```
 
-# When can we use Lambdas?
+## When can we use Lambdas?
 We can use Lambdas if the following conditions are true:
 *   `Predicate` is a "functional interface"[^1], meaning that it is an
     `interface` containing *exactly one* abstract method.
