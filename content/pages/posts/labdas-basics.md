@@ -51,7 +51,7 @@ Starting from Java 8 lambda expression added and created a much more concise alt
 
 Here is a basic example of common code before Java 8:
 ```java
-Predicate<String> is =
+Predicate<String> isEmptyString =
     new Predicate<String>() {
       @Override
       public boolean apply(String str) {
