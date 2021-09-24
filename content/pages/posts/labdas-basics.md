@@ -114,7 +114,7 @@ doSomething((Predicate<String>) str -> str.isEmpty());
 ```
 
 ## What are the limitations?
-
+When there are multiple overloads 
 When will it fail? The most common case is when there are multiple overloads
 accepting different lambda types (a scenario you should try to avoid when
 overloading lambda-accepting methods). But in general, Java 8's new smarter type
