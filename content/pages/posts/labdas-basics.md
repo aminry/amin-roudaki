@@ -78,6 +78,7 @@ We can use Lambdas because the following conditions are true:
     `Predicate<String>`.
 
 It is important to understand what is a Functional Interfaces.
+
 Important: Any interface with one abstract method can be used with lambdas, but there
     is an annotation, `@FunctionalInterface`, to go on interfaces explicitly
     intended for this purpose. We recommend so annotating any interfaces in
