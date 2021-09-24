@@ -49,7 +49,8 @@ Photo by [David Marcu.](https://unsplash.com/photos/wcHCzgo0_mQ)
 
 Starting from Java 8 lambda expression added and created a much more concise alternative for most previous anonymous classes.
 
-Here's the sort of bulky, redundant code you have seen commonly before Java 8:
+Here is a basic example of common code before Java 8:
+
 
 
 
