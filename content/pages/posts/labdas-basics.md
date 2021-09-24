@@ -5,7 +5,7 @@ excerpt: >-
   as such. This specifically refers to difficult walking through dense forest,
   undergrowth, or bushes, where forward progress requires pushing vegetation
   aside.
-date: '2021-01-09'
+date: '2021-09-09'
 thumb_img_path: images/6.jpg
 thumb_img_alt: Hikers on the trail
 content_img_path: images/6.jpg
