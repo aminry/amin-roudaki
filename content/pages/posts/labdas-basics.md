@@ -64,7 +64,7 @@ Predicate<String> isEmptyString =
     };
 ```
 
-## Why can we use Lambdas?
+## When can we use Lambdas?
 
 We can use Lambdas because the following conditions are true:
 
