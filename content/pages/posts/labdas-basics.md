@@ -1,10 +1,7 @@
 ---
 title: Java 8 Lambdas
 excerpt: >-
-  Hiking can sometimes involves bushwhacking and hiking is sometimes referred to
-  as such. This specifically refers to difficult walking through dense forest,
-  undergrowth, or bushes, where forward progress requires pushing vegetation
-  aside.
+  Starting from Java 8 lambda expression added and created a much more concise alternative for most previous anonymous classes. It is known to be the biggest feature introduced with Java 8. It brings Functional Programming to Java.
 date: '2021-09-23'
 thumb_img_path: images/6.jpg
 thumb_img_alt: Java 8 lambdas
