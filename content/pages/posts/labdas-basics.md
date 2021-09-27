@@ -149,6 +149,7 @@ doSomething((Predicate<String>) str -> str.isEmpty());
 If a method has multiple overloads and accepts different lambda types. Then it would be difficult to automatically infer the type. We need to cast in these cases to make it work.
 
 # Lambdas Best Practices
+
 ### Length and complexity {#length}
 
 Lambda expressions are best used for small and simple bits of code. We don't
