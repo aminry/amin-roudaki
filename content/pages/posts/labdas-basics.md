@@ -169,7 +169,6 @@ that reference local variables in the surrounding code (closures) cannot be
 extracted as easily, but it is generally still worthwhile to explore
 alternatives to large lambda bodies.
 
-> Note: For what it's worth, [*Effective Java*](http://go/ej3e#page=217) has
-> this to say:
->
-> > 
+> Note: If a computation isn’t self-explanatory, or exceeds a few lines, don’t put
+> > it in a lambda. One line is ideal for a lambda, and three lines is a
+> > reasonable maximum.
