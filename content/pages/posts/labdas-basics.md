@@ -152,7 +152,8 @@ If a method has multiple overloads and accepts different lambda types. Then it w
 
 ### Length and complexity
 
-Lambdas expression are designed for small and simple 
+Lambdas expression are designed for small and simple bits of code. 
+
 Lambda expressions are best used for small and simple bits of code. We don't
 have a specific threshold in statements, lines, or any other measure. But your
 own personal threshold (for when a lambda expression has become too complex)
