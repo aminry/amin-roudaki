@@ -149,3 +149,24 @@ doSomething((Predicate<String>) str -> str.isEmpty());
 If a method has multiple overloads and accepts different lambda types. Then it would be difficult to automatically infer the type. We need to cast in these cases to make it work.
 
 # Lambdas Best Practices
+### Length and complexity {#length}
+
+Lambda expressions are best used for small and simple bits of code. We don't
+have a specific threshold in statements, lines, or any other measure. But your
+own personal threshold (for when a lambda expression has become too complex)
+should be considerably lower than your threshold for method bodies. A method can
+"handle" a little more complexity, since it has a *name* and can have Javadoc
+when needed. Lambdas don't have that.
+
+Generally speaking, a too-complex lambda expression can be extracted into a
+named method and replaced with a [reference](#method-references) to it. Lambdas
+that reference local variables in the surrounding code (closures) cannot be
+extracted as easily, but it is generally still worthwhile to explore
+alternatives to large lambda bodies.
+
+> Note: For what it's worth, [*Effective Java*](http://go/ej3e#page=217) has
+> this to say:
+>
+> > If a computation isn’t self-explanatory, or exceeds a few lines, don’t put
+> > it in a lambda. One line is ideal for a lambda, and three lines is a
+> > reasonable maximum.
