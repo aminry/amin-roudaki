@@ -150,7 +150,7 @@ If a method has multiple overloads and accepts different lambda types. Then it w
 
 # Lambdas Best Practices
 
-### Length and complexity {#length}
+### Length and complexity
 
 Lambda expressions are best used for small and simple bits of code. We don't
 have a specific threshold in statements, lines, or any other measure. But your
