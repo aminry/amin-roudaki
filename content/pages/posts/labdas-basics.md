@@ -148,37 +148,4 @@ doSomething((Predicate<String>) str -> str.isEmpty());
 
 If a method has multiple overloads and accepts different lambda types. Then it would be difficult to automatically infer the type. We need to cast in these cases to make it work.
 
-## Differences vs. anonymous classes
-
-As mentioned above, you can *mostly* think of a lambda expression or method
-reference as a concise anonymous class. But there are a few differences:
-
-*   Lambda expressions are treated as identityless. References to `this` (both
-    explicitly and implicitly) inside a lambda expression refer to the
-    *containing* instance, not the lambda instance.
-
-*   Instances of both anonymous classes and lambda expressions "capture" state
-    from the surrounding context when they are created -- copying and retaining
-    references to variables\[^2] so they can be used later. But lambda
-    expressions are much smarter about capturing only the state they will really
-    need, which often may be no state at all. This should plug more than a few
-    memory leaks!
-
-*   If a lambda *can* be extracted to a static constant and reused, the VM will
-    usually make that optimization automatically. You should still make a
-    constant for a lambda expression when you feel that it helps *readability*,
-    but there is no need to do so purely for performance reasons.
-
-*   In theory, lambda expressions can incur greater startup cost (a class is
-    generated on the fly). This has not seemed to be a significant problem for
-    any projects we're aware of.
-
-*   Lambda expressions yield fairly useless debugging output (`toString` and
-    stack traces) such as `Foo$$Lambda$5/1044036744`. Unlike with classes, there
-    are really no options for improving this. Of course, what's most important
-    in a stack trace are the exception messages, filenames, and line numbers,
-    and those are all intact.
-
-*   You'll still need to use classes in plenty of situations: when you have more
-    than one method to implement, when you are implementing an abstract class,
-    when you need state, etc.
+## 
