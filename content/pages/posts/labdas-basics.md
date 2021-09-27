@@ -154,6 +154,6 @@ If a method has multiple overloads and accepts different lambda types. Then it w
 
 Lambdas expression are designed for small and simple bits of code. We cannot come up with a rule on the number of lines. But anytime you have some complexity you better off create a method and call that. We can always extract the complex lambda expression into a named method and then use method refernce to call it. 
 
-As suggested in Effective Java i
+As suggested in Effective Java 3rd edition item 42.
 
 > Note: If a computation isn’t self-explanatory, or exceeds a few lines, don’t put it in a lambda. One line is ideal for a lambda, and three lines is a reasonable maximum.
