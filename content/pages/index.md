@@ -10,7 +10,7 @@ sections:
     type: section_content
     title: About
     content: >
-      I'm a Software engineer. I have expreince in builing startups. 
+      I'm a Software engineer. I have expreince in builing startups
     actions:
       - label: Contact Me
         url: /contact
