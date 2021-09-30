@@ -195,7 +195,7 @@ The only case that you might want to no use a method reference is when we are de
 You could store a lambda in variable like this:
 
 ```java
-private static final Function<Foo, Bar> GET_BAR_FUNCTION =
+private static final Function<Foo, Bar> CALCULATE_BAR =
     foo -> BarService.lookupBar(foo, defaultCredentials());
 
 ...
