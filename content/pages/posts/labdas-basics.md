@@ -200,7 +200,7 @@ private static final Function<Foo, Bar> CALCULATE_BAR =
 
 ...
 
-return someStream().map(GET_BAR_FUNCTION)....;
+return someStream().map(CALCULATE_BAR)....;
 ```
 
 This isn't terrible, but consider this option instead:
