@@ -196,7 +196,7 @@ You could store a lambda in variable like this:
 
 ```java
 private static final Function<Foo, Bar> CALCULATE_BAR =
-    foo -> BarCalculator.calculate(foo, ());
+    foo -> BarCalculator.calculate(foo, getDefaults());
 
 ...
 
