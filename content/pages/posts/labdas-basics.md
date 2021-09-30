@@ -207,7 +207,7 @@ A better option to write a regular method like:
 
 ```java
 private static Bar calculateBar(Foo foo) {
-  return BarService.calculate(foo, getDefaults());
+  return BarCalculator.calculate(foo, getDefaults());
 }
 
 ...
