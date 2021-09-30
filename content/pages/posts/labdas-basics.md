@@ -184,7 +184,7 @@ validateAllFoos(foo -> isFooABar(foo, data));
 
 Instead of writing a lambdas you always can use a method reference which passes the lambda's parameters through named method.
 
-#### When should I use method references?
+#### When to use method references?
 
 Whenever you can, basically. Method references are just as efficient, or
 sometimes even more efficient, than lambda expressions. (Behind the scenes, it's
