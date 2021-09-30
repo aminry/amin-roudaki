@@ -190,7 +190,7 @@ It is prefered to use method reference when possible. It is the same and maybe b
 
 The only case that you might want to no use a method reference is when we are dealing with a method which the full name is longer than the lambda. For example: MyLongClassName::operate(i) can be replaced with i -> operate(i)
 
-#### Avoid storing a lambda expression in a variable
+#### Perfer regular methods over storeing a lambda in Avoid storing a lambda expression in a variable
 
 You may encounter code like this:
 
