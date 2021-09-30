@@ -172,7 +172,7 @@ Predicate<Foo> isFooABarPredicate(FooBarData data) {
 validateAllFoos(isFooABarPredicate(data));
 ```
 
-This sort of functional factory can often similarly be refactored, for example:
+We can refactor the code like the following and , for example:
 
 ```java
 boolean isFooABar(Foo foo, FooBarData data) {
