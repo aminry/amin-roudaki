@@ -215,7 +215,7 @@ private static Bar calculateBar(Foo foo) {
 return someStream().map(MyClass::calculateBar)....;
 ```
 
-Advantages include:
+Why do we prefer  include:
 
 *   It avoids hardcoding a named dependency on the functional interface type
     (e.g., is it a `com.google.common.base.Function` or a
