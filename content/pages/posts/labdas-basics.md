@@ -182,6 +182,7 @@ validateAllFoos(foo -> isFooABar(foo, data));
 
 ### Method references
 
+
 A method reference is an alternate syntax for a lambda expression, which in
 essence passes the lambda's parameters through to a named method. It is fair to
 say "a method reference *is* a lambda expression", except when specifically
