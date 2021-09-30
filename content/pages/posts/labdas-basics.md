@@ -215,7 +215,7 @@ private static Bar calculateBar(Foo foo) {
 return someStream().map(MyClass::calculateBar)....;
 ```
 
-Why do we prefer regular method include:
+Why do we prefer regular method?
 
 *   It avoids hardcoding a named dependency on the functional interface type
     (e.g., is it a `com.google.common.base.Function` or a
