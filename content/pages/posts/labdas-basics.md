@@ -192,7 +192,7 @@ The only case that you might want to no use a method reference is when we are de
 
 #### Perfer regular methods over storeing a lambda in a variable
 
-You may encounter code like this:
+You could store a lambda in variable like this:
 
 ```java
 private static final Function<Foo, Bar> GET_BAR_FUNCTION =
