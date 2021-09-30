@@ -160,7 +160,7 @@ As suggested in Effective Java 3rd edition item 42.
 
 ### Prefer methods that implement functional interfaces to methods returning functional interfaces
 
-In the same vein, you may encounter code like this:
+Instead of writing something like this:
 
 ```java
 Predicate<Foo> isFooABarPredicate(FooBarData data) {
