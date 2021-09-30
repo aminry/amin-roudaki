@@ -84,7 +84,7 @@ It is important to understand what is Functional Interfaces.
 <div class="note">Any interface with one abstract method can be used with lambdas, but there is an annotation, `@FunctionalInterface`, to go on interfaces explicitly intended for this purpose. We recommend so annotating any interfaces in your project you explicitly intend to implement with lambdas.
 </div>
 
-# Can we make it more concise?
+## Can we make it more concise?
 
 Lambdas can help us simplify a lot more. When the lambda expression contains exactly one statement, and the statement is returning a value or it is a void method call. Then we can remove the braces like the following:
 
@@ -148,37 +148,71 @@ doSomething((Predicate<String>) str -> str.isEmpty());
 
 If a method has multiple overloads and accepts different lambda types. Then it would be difficult to automatically infer the type. We need to cast in these cases to make it work.
 
-## Differences vs. anonymous classes
+# Lambdas Best Practices
 
-As mentioned above, you can *mostly* think of a lambda expression or method
-reference as a concise anonymous class. But there are a few differences:
+### Length and complexity
 
-*   Lambda expressions are treated as identityless. References to `this` (both
-    explicitly and implicitly) inside a lambda expression refer to the
-    *containing* instance, not the lambda instance.
+Lambdas expression are designed for small and simple bits of code. We cannot come up with a rule on the number of lines. But anytime you have some complexity you better off create a method and call that. We can always extract the complex lambda expression into a named method and then use method refernce to call it. 
 
-*   Instances of both anonymous classes and lambda expressions "capture" state
-    from the surrounding context when they are created -- copying and retaining
-    references to variables\[^2] so they can be used later. But lambda
-    expressions are much smarter about capturing only the state they will really
-    need, which often may be no state at all. This should plug more than a few
-    memory leaks!
+As suggested in Effective Java 3rd edition item 42.
 
-*   If a lambda *can* be extracted to a static constant and reused, the VM will
-    usually make that optimization automatically. You should still make a
-    constant for a lambda expression when you feel that it helps *readability*,
-    but there is no need to do so purely for performance reasons.
+> Note: If a computation isn’t self-explanatory, or exceeds a few lines, don’t put it in a lambda. One line is ideal for a lambda, and three lines is a reasonable maximum.
 
-*   In theory, lambda expressions can incur greater startup cost (a class is
-    generated on the fly). This has not seemed to be a significant problem for
-    any projects we're aware of.
+### Prefer methods that implement functional interfaces to methods returning functional interfaces
 
-*   Lambda expressions yield fairly useless debugging output (`toString` and
-    stack traces) such as `Foo$$Lambda$5/1044036744`. Unlike with classes, there
-    are really no options for improving this. Of course, what's most important
-    in a stack trace are the exception messages, filenames, and line numbers,
-    and those are all intact.
+Instead of writing something like this:
 
-*   You'll still need to use classes in plenty of situations: when you have more
-    than one method to implement, when you are implementing an abstract class,
-    when you need state, etc.
+```java
+Predicate<Foo> isFooABarPredicate(FooBarData data) {
+  return foo -> data.getBarForFoo(foo).isValidBar();
+}
+
+validateAllFoos(isFooABarPredicate(data));
+```
+
+We can refactor the code like the following and apply the predicate inside the method:
+
+```java
+boolean isFooABar(Foo foo, FooBarData data) {
+  return data.getBarForFoo(foo).isValidBar();
+}
+
+validateAllFoos(foo -> isFooABar(foo, data));
+```
+
+### Method references
+
+Instead of writing a lambdas you always can use a method reference which passes the lambda's parameters through named method.
+
+#### When to use method references?
+
+It is prefered to use method reference when possible. It is the same and maybe better in terms of efficiency. When the lambda's getting too long, we can move the logic into a method and then replace it with the method reference.
+
+The only case that you might want to no use a method reference is when we are dealing with a method which the full name is longer than the lambda. For example: MyLongClassName::operate(i) can be replaced with i -> operate(i)
+
+#### Perfer regular methods over storeing a lambda in a variable
+
+You could store a lambda in variable like this:
+
+```java
+private static final Function<Foo, Bar> CALCULATE_BAR =
+    foo -> BarCalculator.calculate(foo, getDefaults());
+
+...
+
+return someStream().map(CALCULATE_BAR)....;
+```
+
+A better option to write a regular method like:
+
+```java
+private static Bar calculateBar(Foo foo) {
+  return BarCalculator.calculate(foo, getDefaults());
+}
+
+...
+
+return someStream().map(MyClass::calculateBar)....;
+```
+
+Using a name method is easier to test than a variable. Also we can write javadoc for the method.

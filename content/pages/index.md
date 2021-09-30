@@ -10,8 +10,7 @@ sections:
     type: section_content
     title: About
     content: >
-      My takes on various topics from best practices to building services and
-      Ads infrastructure.
+      I'm a Software engineer. I have worked at both startups and large tech companies like Microsoft and Google. I have been coding for over 2 decade. I love to code and share what I am good at with others and empower them. Most recently my focus has been Big data, distributed systems, low latency micro-services and Ads infrastructure.
     actions:
       - label: Contact Me
         url: /contact
