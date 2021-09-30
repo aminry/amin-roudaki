@@ -172,7 +172,7 @@ Predicate<Foo> isFooABarPredicate(FooBarData data) {
 validateAllFoos(isFooABarPredicate(data));
 ```
 
-We can refactor the code like the following and apply the predicate inside the method, for example:
+We can refactor the code like the following and apply the predicate inside the method:
 
 ```java
 boolean isFooABar(Foo foo, FooBarData data) {
