@@ -180,7 +180,7 @@ boolean isFooABar(Foo foo, FooBarData data) {
 validateAllFoos(foo -> isFooABar(foo, data));
 ```
 
-## Method references
+### Method references
 
 A method reference is an alternate syntax for a lambda expression, which in
 essence passes the lambda's parameters through to a named method. It is fair to
