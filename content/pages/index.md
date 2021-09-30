@@ -10,8 +10,7 @@ sections:
     type: section_content
     title: About
     content: >
-      My takes on various topics from best practices  services and
-      Ad
+      
     actions:
       - label: Contact Me
         url: /contact
