@@ -187,11 +187,6 @@ Instead of writing a lambdas you always can use a method reference which passes 
 #### When to use method references?
 
 It is prefered to use method reference when possible. It is the same and maybe better in terms of efficiency. When the lambda's getting too long, we can move the logic into a method and then replace it with the method reference.
-Whenever you can, basically. Method references are just as efficient, or
-sometimes even more efficient, than lambda expressions. (Behind the scenes, it's
-more accurate to say lambda expressions are converted to method references than
-the other way around.) Is your lambda body getting too long? Pull that body into
-a method, and use a method reference instead.
 
 That said, under certain specific circumstances, method references may be longer
 to write than the equivalent lambda. In particular, because you must qualify
