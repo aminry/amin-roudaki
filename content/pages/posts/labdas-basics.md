@@ -186,6 +186,7 @@ Instead of writing a lambdas you always can use a method reference which passes 
 
 #### When to use method references?
 
+
 Whenever you can, basically. Method references are just as efficient, or
 sometimes even more efficient, than lambda expressions. (Behind the scenes, it's
 more accurate to say lambda expressions are converted to method references than
