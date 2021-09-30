@@ -187,7 +187,7 @@ essence passes the lambda's parameters through to a named method. It is fair to
 say "a method reference *is* a lambda expression", except when specifically
 discussing syntax.
 
-### When should I use method references?
+#### When should I use method references?
 
 Whenever you can, basically. Method references are just as efficient, or
 sometimes even more efficient, than lambda expressions. (Behind the scenes, it's
