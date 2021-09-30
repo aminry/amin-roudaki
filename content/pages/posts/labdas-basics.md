@@ -203,7 +203,7 @@ private static final Function<Foo, Bar> CALCULATE_BAR =
 return someStream().map(CALCULATE_BAR)....;
 ```
 
-This isn't terrible, but consider this option instead:
+A better option to wr:
 
 ```java
 private static Bar getBar(Foo foo) {
