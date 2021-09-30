@@ -180,3 +180,70 @@ boolean isFooABar(Foo foo, FooBarData data) {
 validateAllFoos(foo -> isFooABar(foo, data));
 ```
 
+## Method references
+
+A method reference is an alternate syntax for a lambda expression, which in
+essence passes the lambda's parameters through to a named method. It is fair to
+say "a method reference *is* a lambda expression", except when specifically
+discussing syntax.
+
+### When should I use method references?
+
+Whenever you can, basically. Method references are just as efficient, or
+sometimes even more efficient, than lambda expressions. (Behind the scenes, it's
+more accurate to say lambda expressions are converted to method references than
+the other way around.) Is your lambda body getting too long? Pull that body into
+a method, and use a method reference instead.
+
+That said, under certain specific circumstances, method references may be longer
+to write than the equivalent lambda. In particular, because you must qualify
+static method references with the class name you may sometimes prefer `i ->
+myFunction(i)` over `MyVeryLongClass::myFunction`. But in general, method
+references will usually be more compact than lambdas, and should be preferred
+even when they're a little longer.
+
+### Complex expressions in method references
+
+You can put an expression of unlimited complexity before the `::` of a method
+reference, but please don't. If the expression is complex, it's clearer to store
+that result in a local variable and use `localVar::`, because it more clearly
+separates the code that executes *now* from the code that executes *later*.
+
+### Avoid storing a lambda expression in a variable {#prefer-method-references}
+
+You may encounter code like this:
+
+```java
+private static final Function<Foo, Bar> GET_BAR_FUNCTION =
+    foo -> BarService.lookupBar(foo, defaultCredentials());
+
+...
+
+return someStream().map(GET_BAR_FUNCTION)....;
+```
+
+This isn't terrible, but consider this option instead:
+
+```java
+private static Bar getBar(Foo foo) {
+  return BarService.lookupBar(foo, defaultCredentials());
+}
+
+...
+
+return someStream().map(MyClass::getBar)....;
+```
+
+Advantages include:
+
+*   It avoids hardcoding a named dependency on the functional interface type
+    (e.g., is it a `com.google.common.base.Function` or a
+    `java.util.function.Function`?)
+*   It is easier to name the method than the variable.
+*   It is more natural to test the method than the variable.
+*   If the behavior is nontrivial, it's much more natural to write javadoc for
+    the method.
+
+Note: there is no need to worry about storing lambda expressions in a constant
+for performance reasons; the Java runtime is fairly smart about making this
+optimization itself whenever it can.
