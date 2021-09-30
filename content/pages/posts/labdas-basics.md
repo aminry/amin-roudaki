@@ -177,7 +177,5 @@ boolean isFooABar(Foo foo, FooBarData data) {
   return data.getBarForFoo(foo).isValidBar();
 }
 
-...
-
 validateAllFoos(foo -> isFooABar(foo, data));
 ```
