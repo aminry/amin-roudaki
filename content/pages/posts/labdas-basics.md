@@ -179,3 +179,4 @@ boolean isFooABar(Foo foo, FooBarData data) {
 
 validateAllFoos(foo -> isFooABar(foo, data));
 ```
+
