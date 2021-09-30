@@ -158,7 +158,7 @@ As suggested in Effective Java 3rd edition item 42.
 
 > Note: If a computation isn’t self-explanatory, or exceeds a few lines, don’t put it in a lambda. One line is ideal for a lambda, and three lines is a reasonable maximum.
 
-### Prefer methods that implement functional interfaces to methods returning functional interfaces {#prefer-functional-methods}
+### Prefer methods that implement functional interfaces to methods returning functional interfaces
 
 In the same vein, you may encounter code like this:
 
