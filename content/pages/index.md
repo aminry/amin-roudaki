@@ -11,7 +11,7 @@ sections:
     title: About
     content: >
       My takes on various topics from best practices  services and
-      Ads infrastructure.
+      Ads infrastructure
     actions:
       - label: Contact Me
         url: /contact
