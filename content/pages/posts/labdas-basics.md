@@ -190,13 +190,6 @@ It is prefered to use method reference when possible. It is the same and maybe b
 
 The only case that you might want to no use a method reference is when we are dealing with a method which the full name is longer than the lambda. For example: MyLongClassName::operate(i) can be replaced with i -> operate(i)
 
-That said, under certain specific circumstances, method references may be longer
-to write than the equivalent lambda. In particular, because you must qualify
-static method references with the class name you may sometimes prefer `i ->
-myFunction(i)` over `MyVeryLongClass::myFunction`. But in general, method
-references will usually be more compact than lambdas, and should be preferred
-even when they're a little longer.
-
 #### Complex expressions in method references
 
 You can put an expression of unlimited complexity before the `::` of a method
