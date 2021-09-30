@@ -10,7 +10,7 @@ sections:
     type: section_content
     title: About
     content: >
-      I'm a Software engineer. I have worked at both startups and large tech companies like Microsoft and Google. I have been coding for over 2 decade. I love to code and share my experiences with 
+      I'm a Software engineer. I have worked at both startups and large tech companies like Microsoft and Google. I have been coding for over 2 decade. I love to code and share what I am good at with others.
     actions:
       - label: Contact Me
         url: /contact
