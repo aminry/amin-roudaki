@@ -188,6 +188,8 @@ Instead of writing a lambdas you always can use a method reference which passes 
 
 It is prefered to use method reference when possible. It is the same and maybe better in terms of efficiency. When the lambda's getting too long, we can move the logic into a method and then replace it with the method reference.
 
+
+
 That said, under certain specific circumstances, method references may be longer
 to write than the equivalent lambda. In particular, because you must qualify
 static method references with the class name you may sometimes prefer `i ->
