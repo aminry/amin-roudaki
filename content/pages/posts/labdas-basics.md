@@ -167,8 +167,6 @@ Predicate<Foo> isFooABarPredicate(FooBarData data) {
   return foo -> data.getBarForFoo(foo).isValidBar();
 }
 
-...
-
 validateAllFoos(isFooABarPredicate(data));
 ```
 
