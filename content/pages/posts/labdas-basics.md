@@ -215,7 +215,7 @@ private static Bar calculateBar(Foo foo) {
 return someStream().map(MyClass::calculateBar)....;
 ```
 
-Using a name method is easier to test than a variable. 
+Using a name method is easier to test than a variable. Also we can write javadoc for the method.
 Why do we prefer regular method?
 
 *   It avoids hardcoding a named dependency on the functional interface type
