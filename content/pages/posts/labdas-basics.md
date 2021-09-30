@@ -212,7 +212,7 @@ private static Bar calculateBar(Foo foo) {
 
 ...
 
-return someStream().map(MyClass::getBar)....;
+return someStream().map(MyClass::calculateBar)....;
 ```
 
 Advantages include:
