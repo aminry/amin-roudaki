@@ -202,14 +202,14 @@ myFunction(i)` over `MyVeryLongClass::myFunction`. But in general, method
 references will usually be more compact than lambdas, and should be preferred
 even when they're a little longer.
 
-### Complex expressions in method references
+#### Complex expressions in method references
 
 You can put an expression of unlimited complexity before the `::` of a method
 reference, but please don't. If the expression is complex, it's clearer to store
 that result in a local variable and use `localVar::`, because it more clearly
 separates the code that executes *now* from the code that executes *later*.
 
-### Avoid storing a lambda expression in a variable {#prefer-method-references}
+#### Avoid storing a lambda expression in a variable {#prefer-method-references}
 
 You may encounter code like this:
 
