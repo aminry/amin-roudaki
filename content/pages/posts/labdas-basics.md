@@ -224,7 +224,3 @@ Advantages include:
 *   It is more natural to test the method than the variable.
 *   If the behavior is nontrivial, it's much more natural to write javadoc for
     the method.
-
-Note: there is no need to worry about storing lambda expressions in a constant
-for performance reasons; the Java runtime is fairly smart about making this
-optimization itself whenever it can.
