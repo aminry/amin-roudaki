@@ -216,12 +216,3 @@ return someStream().map(MyClass::calculateBar)....;
 ```
 
 Using a name method is easier to test than a variable. Also we can write javadoc for the method.
-Why do we prefer regular method?
-
-*   It avoids hardcoding a named dependency on the functional interface type
-    (e.g., is it a `com.google.common.base.Function` or a
-    `java.util.function.Function`?)
-*   It is easier to name the method than the variable.
-*   It is more natural to test the method than the variable.
-*   If the behavior is nontrivial, it's much more natural to write javadoc for
-    the method.
