@@ -10,7 +10,7 @@ sections:
     type: section_content
     title: About
     content: >
-      My takes on various topics from best practices to building services and
+      My takes on various topics from best practices to u services and
       Ads infrastructure.
     actions:
       - label: Contact Me
