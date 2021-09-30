@@ -190,13 +190,6 @@ It is prefered to use method reference when possible. It is the same and maybe b
 
 The only case that you might want to no use a method reference is when we are dealing with a method which the full name is longer than the lambda. For example: MyLongClassName::operate(i) can be replaced with i -> operate(i)
 
-#### Complex expressions in method references
-
-You can put an expression of unlimited complexity before the `::` of a method
-reference, but please don't. If the expression is complex, it's clearer to store
-that result in a local variable and use `localVar::`, because it more clearly
-separates the code that executes *now* from the code that executes *later*.
-
 #### Avoid storing a lambda expression in a variable {#prefer-method-references}
 
 You may encounter code like this:
